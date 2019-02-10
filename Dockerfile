@@ -1,3 +1,3 @@
 FROM gitlab/dind:latest
-RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
+RUN sudo apt-get update
+RUN sudo apt-get install -y git
